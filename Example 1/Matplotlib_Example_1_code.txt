@@ -93,7 +93,7 @@ plt.show()
 
 
 #Dataframe to demonstrate that including the "Under $20,000" income bin (distinct from the 4 bins I aggregated to make the
-#"<$20,000" bin)
+#"<$20,000" bin) does not change results much
 
 incbracketdictalt = {1:'<$20,000', 2:'<$20,000', 3:'<$20,000', 4:'<$20,000', 5:'\$20,000–$34,999',
                   6:'\$20,000–$34,999', 7:'\$35,000–$54,999', 8:'\$35,000–$54,999', 9:'\$55,000–$74,999',
@@ -140,11 +140,12 @@ keydata_altmeans = keydata_altmeans.reindex([0,2,3,4,5,1])
 keydata_altmeans = keydata_altmeans.reset_index()
 
 #final dataframe
-keydata_altmeans
+print('"Results with "Under $20,000" assimilated dataframe')
+print(keydata_altmeans)
 
 
 
-#Cell to demonstrate that standard deviations of two possible alternative metrics, days and minutes
+#Dataframe to demonstrate that standard deviations of two possible alternative metrics, days and minutes
 #of recreational physical activity, are extremely high and the confidence intervals wide enough to
 #extend far into the negatives, making days and minutes unfit metrics.
 
@@ -209,7 +210,8 @@ keydata_alt2means = keydata_alt2means.reindex([0,2,3,4,5,1])
 keydata_alt2means = keydata_alt2means.reset_index()
 
 #final dataframe (note the confidence intervals)
-keydata_alt2means.iloc[:,-14:]
+print('Alternate Metrics Dataframe (last 14 columns)')
+print(keydata_alt2means.iloc[:,-14:])
 
 
 
