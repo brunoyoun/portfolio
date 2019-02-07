@@ -1,4 +1,4 @@
-
+﻿
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 #read in datasets
 demo = pd.read_sas('DEMO_I.XPT')
 pa201516 = pd.read_sas('PAQ_I.XPT')
-
 
 #join some datasets
 pademo = pd.merge(pa201516,demo,left_on='SEQN', right_on='SEQN')
@@ -209,7 +208,7 @@ keydata_alt2means = keydata_alt2means.reset_index()
 keydata_alt2means = keydata_alt2means.reindex([0,2,3,4,5,1])
 keydata_alt2means = keydata_alt2means.reset_index()
 
-#final dataframe
+#final dataframe (note the confidence intervals)
 keydata_alt2means.iloc[:,-14:]
 
 
