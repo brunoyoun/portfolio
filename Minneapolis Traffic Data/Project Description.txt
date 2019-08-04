@@ -1,5 +1,6 @@
 This is the first ever independent analysis in which I have used sklearn.
 
-I could have simply used the Titanic or iris datasets, but I wanted to take a road less travelled. Because I hail from southern California, I chose a dataset that reflected a large part of my life.
+I could have simply used the Titanic or iris datasets, but I wanted to take a road less travelled.
+Because I hail from southern California, I chose a dataset that reflected a large part of my life.
 
 I resorted to some elaborate data cleaning procedures to get rid of rows of data that referred to the same point in time.
